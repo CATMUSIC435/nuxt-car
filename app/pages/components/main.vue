@@ -49,8 +49,10 @@ const tabs = [
     <div>
         <div>
             <div class="h-screen md:h-full w-screen relative overflow-hidden">
-                <NuxtImg src="/images/Cayenne-Turbo-Electric.jpg" class="w-full h-full object-cover" />
-                <div class="absolute top-0 left-0 w-full">
+                <div class="absolute md:relative top-0 left-0 h-full">
+                    <NuxtImg src="/images/Cayenne-Turbo-Electric.jpg" class="md:w-full w-auto h-full object-cover" />
+                </div>
+                <div class="pb-20 relative md:absolute top-0 left-0 w-full  ">
                     <div class="px-4 md:px-8 py-6">
                         <div class="flex justify-between w-full relative">
                             <div class="hidden md:flex gap-4">
@@ -126,19 +128,19 @@ const tabs = [
                 <div class="py-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0">
                         <div>
-                            <div class="grid grid-cols-2">
-                                <div class="flex flex-col items-end gap-12">
-                                    <div class="w-[80%]">
+                            <div class="grid grid-cols-2 gap-4 md:gap-0">
+                                <div class="flex flex-col items-end gap-4 md:gap-12">
+                                    <div class="w-full md:w-[80%]">
                                         <NuxtImg src="/images/Cayenne-Turbo-Electric.jpg"
                                             class="w-full h-full object-cover rounded-lg" />
                                     </div>
-                                    <div class="w-[60%]">
+                                    <div class="w-full md:w-[60%]">
                                         <NuxtImg src="/images/Cayenne-Turbo-Electric.jpg"
                                             class="w-full h-full object-cover rounded-lg" />
                                     </div>
                                 </div>
                                 <div class="flex justify-end">
-                                    <div class="w-5/6 h-full bg-center bg-cover rounded-lg"
+                                    <div class="w-full md:w-5/6 h-full bg-center bg-cover rounded-lg"
                                         style="background-image: url(/images/Cayenne-Turbo-Electric.jpg);">
 
                                     </div>
@@ -322,9 +324,11 @@ const tabs = [
         </div>
 
         <div>
-            <div class="h-[80vh] md:h-screen w-screen relative overflow-hidden">
-                <NuxtImg src="/images/Shelby-Super-Snake.jpg" class="w-full h-full object-cover" />
-                <div class="absolute left-0 top-[20%] md:left-[10%]">
+            <div class="h-full md:h-screen w-screen relative overflow-hidden">
+                <div class="h-full absolute md:relative top-0 left-0 z-0">
+                    <NuxtImg src="/images/Shelby-Super-Snake.jpg" class="w-full h-full object-cover" />
+                </div>
+                <div class="relative md:absolute md:top-[20%] md:left-[10%] px-4 py-20 px:px-0 md:py-0 z-1">
                     <div
                         class="px-8 py-6 rounded-xl bg-white hover:shadow transition duration-150 ease-initial max-w-md">
                         <AutoLoanCalculator />
